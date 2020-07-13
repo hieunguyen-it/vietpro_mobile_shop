@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" href="style.css" rel="stylesheet" media="screen">
+    <style>
+        #wrap{
+            margin:0px auto;
+            width:90%;
+        }
+        
+        .column-1-6 {
+            width:16.6666667%;
+        }
+        .column-2-6 {
+            width:33.3333333%;
+        }
+        .column-3-6 {
+            width:50%;
+        }
+        .column-4-6 {
+            width:66.6666667%;
+        }
+        .column-5-6 {
+            width:83.3333333%;
+        }
+        .column-6-6 {
+            width:100%;
+        }
+        [class^=column] {
+            float:left;
+        }
+        .row::after{
+            clear:left;
+            content:"";
+            display:block;
+
+        }
+        *{
+            box-sizing:border-box;
+        }
+        #header{
+            background:blue;
+            height:50px;
+        }
+        #conten{
+            background:red;
+            
+            height:300px;
+        }
+        #sidebar{
+            background:yellow;
+          
+            height:300px
+        }
+        #footer{
+            background:green;
+            
+            height:50px;
+        }
+        @media screen and (min-width:481px) and (max-width:768px){
+            .column-tab-1-6 {
+            width:16.6666667%;
+            }
+            .column-tab-2-6 {
+                width:33.3333333%;
+            }
+            .column-tab-3-6 {
+                width:50%;
+            }
+            .column-tab-4-6 {
+                width:66.6666667%;
+            }
+            .column-tab-5-6 {
+                width:83.3333333%;
+            }
+            .column-tab-6-6 {
+                width:100%;
+            }
+        
+        }
+        @media screen and (max-width:480px){
+            .column-dt-1-6 {
+            width:16.6666667%;
+            }
+            .column-dt-2-6 {
+                width:33.3333333%;
+            }
+            .column-dt-3-6 {
+                width:50%;
+            }
+            .column-dt-4-6 {
+                width:66.6666667%;
+            }
+            .column-dt-5-6 {
+                width:83.3333333%;
+            }
+            .column-dt-6-6 {
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="row">
+            <div id="header" class="column-6-6"> hearder</div>
+        </div>
+        <div class="row">
+            <div id="conten" class="column-4-6  column-tab-3-6 column-dt-6-6"> conten</div>
+            <div id="sidebar" class="column-2-6 column-tab-3-6 column-dt-6-6"> sidebar</div>
+        </div>
+        <div class="row">
+            <div id="footer" class="column-6-6"> footer </div>
+        </div>
+    </div>
+        
+</body>
+   
+    
+</html
+http://localhost/test1/duan1.html

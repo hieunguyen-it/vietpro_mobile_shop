@@ -1,0 +1,24 @@
+.rating-box{
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+}
+
+.rating-box h1{
+	margin:0 0 30px;
+	font-size: 40px;
+}
+.rating-box .ratings .fa{
+  font-size: 40px;
+  color:#FF9800;
+  float: left;
+  cursor: pointer;
+}
+
+.rating-box input{
+    width: 160px;;
+	margin: 20px 0px;
+	font-size:20px;
+	padding:6px 12px;
+	background-color: #bbb;
+}
